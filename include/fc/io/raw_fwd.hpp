@@ -54,6 +54,9 @@ namespace fc {
     template<typename Stream, typename K, typename V> inline void pack( Stream& s, const flat_map<K,V>& value );
     template<typename Stream, typename K, typename V> inline void unpack( Stream& s, flat_map<K,V>& value );
 
+	template<typename Stream, typename K, typename V> inline void pack( Stream& s, const std::multimap<K,V>& value );
+    template<typename Stream, typename K, typename V> inline void unpack( Stream& s, std::multimap<K,V>& value );
+	
     template<typename Stream, typename K, typename V> inline void pack( Stream& s, const std::pair<K,V>& value );
     template<typename Stream, typename K, typename V> inline void unpack( Stream& s, std::pair<K,V>& value );
 
